@@ -1,9 +1,8 @@
 # software
-codes of work
-we need to install some pakeges to start the code like 
-pip install python3
-pip install pandas
-pip install PySimpleGUI
+#codes of work we need to install some pakeges to start the code like 
+1. pip install python3
+2. pip install pandas 
+3. pip install PySimpleGUI
 
 
 # to make a exicutable file 
