@@ -68,7 +68,7 @@ while True:
                 clear_input()
     else :
         pass
-# Income panel start from here in this code
+# Income panel start here in this code
     if event == 'Income':
         sg.theme('Black')
         EXCEL_FILE = 'income.xlsx'
@@ -81,6 +81,7 @@ while True:
             [sg.Text('Amount', size=(15,1)), sg.InputText(key='Amount')],
             [sg.Text('Method of payment:' ,size= (15,1)),sg.Combo(["ONLINE","BANK","CASH"], key = "METHOD") ],
             [sg.Text('Pad No.:', size=(15,1)), sg.InputText(key='Pad no.')],
+            [sg.Text('Collection :', size=(15,1)), sg.Combo(["DAN PATR","BANK","PAD"], key = "Collection") ],
             [sg.Text('Remark', size=(20,5)), sg.InputText(key='Remark')],
             [sg.Submit(),sg.Button('Clear') ,sg.Exit()]
         ]
