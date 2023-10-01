@@ -1,3 +1,6 @@
+x= input("3:00 pm")
+y= input("2:00")
+z= input("saturday")
 def get_days_later(days):
     """ Format the days later into string"""
     if days == 1:
@@ -82,7 +85,7 @@ def add_time(start_time, end_time, day=False):
 
     return print("result:" + results.strip())
 if __name__=="__main__":
-       add_time("3:00 pm", "3:00")
+       add_time(x,y,z)
 
 
 
