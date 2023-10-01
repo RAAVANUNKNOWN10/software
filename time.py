@@ -1,6 +1,6 @@
-x= input("3:00 pm")
-y= input("2:00")
-z= input("saturday")
+x= input("3:00 pm : ")
+y= input("2:00 : ")
+z= input("saturday : ")
 def get_days_later(days):
     """ Format the days later into string"""
     if days == 1:
