@@ -83,7 +83,7 @@ def add_time(start_time, end_time, day=False):
     else:  # add the days later
         results = " ".join((results, get_days_later(days_later)))
 
-    return print("result:" + results.strip())
+    return print("result: " + results.strip())
 if __name__=="__main__":
        add_time(x,y,z)
 
