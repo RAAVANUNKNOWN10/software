@@ -38,9 +38,43 @@ sudo mkdir -p ~/myapp/
 echo "~/myapp dic was created"
 sleep 5s
 
-wget link
-sudo mv cpu.sh ~/myapp/sys.sh
+wget https://github.com/RAAVANUNKNOWN10/software/blob/main/myapp.py
+sudo mv myapp.py ~/myapp/login.py
 cd ~/myapp/
-chmod +x sys.sh
-echo "giving permission"
-./sys.sh
+chmod +x login.py
+echo "giving permission of exicution"
+
+# creating desk top file
+
+sleep 2s
+
+wget  https://github.com/RAAVANUNKNOWN10/software/blob/main/logo.png
+
+sleep 1s
+
+sudo bash -c 'cat > login_desktop.sh << EOF
+
+#!/bin/bash
+sudo python3 ~/myapp/login.py
+
+EOF'
+
+chmod +x login_desktop.sh
+
+cd ~/Desktop
+touch myapp.desktop
+
+sudo bash -c 'cat > ./myapp.desktop <<EOF
+
+[Desktop Entry]
+Name=Raavan
+Comment= pythonqt
+Exce=~/myapp/login_desktop.sh
+Icon=~/myapp/logo.png
+Terminal=false
+Type=Application
+EOF'
+
+chmod +x ./myapp.desktop
+
+echo "application stared"
