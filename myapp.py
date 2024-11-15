@@ -3,7 +3,6 @@ from PyQt6.QtCore import QSize, Qt
 from PyQt6.QtGui import QFont, QPixmap
 from PyQt6.QtWidgets import QApplication,QDialog, QMainWindow, QPushButton, QWidget, QLabel, QLineEdit, QPushButton,QHBoxLayout, QVBoxLayout, QMessageBox,QTextEdit, QGridLayout
 import sqlite3
-import data
 import mysql.connector
 from mysql.connector import Error
 from datetime import datetime
@@ -257,7 +256,7 @@ class LoginForm(QWidget):
                 self.hide()
                 self.UserWindow = UserWindow()
                 self.UserWindow.show()
-                data.trigger_activity(f"user_login: {username}")
+                self.trigger_activity(f"user_login: {username}")
 
             else:
                 QMessageBox.warning(self,'Error:','Invalid Username and Password')
